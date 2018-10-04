@@ -13,25 +13,91 @@
     $('.truckText').hide().removeClass('hide');
     $('.tankText').hide().removeClass('hide');
     $('.pokerText').hide().removeClass('hide');
-    
+    $('#lessDread').hide().removeClass('hide');
+    $('#lessTruck').hide().removeClass('hide');
 
-
+// Toggles for more/less text
     $("#moreDread").click(function(){
       $(".dreadText").toggle();
     });
+    $("#lessDread").click(function(){
+      $(".dreadText").toggle();
+    });
+    $("#moreDread").click(function(){
+      $("#moreDread").toggle();
+    });
+    $("#moreDread").click(function(){
+      $("#lessDread").toggle();
+    });
+    $("#lessDread").click(function(){
+      $("#lessDread").toggle();
+    });
+    $("#lessDread").click(function(){
+      $("#moreDread").toggle();
+    });
+    
+
 
     $("#moreTruck").click(function(){
       $(".truckText").toggle();
     });
+    $("#lessTruck").click(function(){
+      $(".truckText").toggle();
+    });
+    $("#moreTruck").click(function(){
+      $("#moreTruck").toggle();
+    });
+    $("#moreTruck").click(function(){
+      $("#lessTruck").toggle();
+    });
+    $("#lessTruck").click(function(){
+      $("#lessTruck").toggle();
+    });
+    $("#lessTruck").click(function(){
+      $("#moreTruck").toggle();
+    });
     
+
+
     $("#morePoker").click(function(){
       $(".pokerText").toggle();
+    });
+    $("#lessPoker").click(function(){
+      $(".pokerText").toggle();
+    });
+    $("#morePoker").click(function(){
+      $("#morePoker").toggle();
+    });
+    $("#morePoker").click(function(){
+      $("#lessPoker").toggle();
+    });
+    $("#lessPoker").click(function(){
+      $("#lessPoker").toggle();
+    });
+    $("#lessPoker").click(function(){
+      $("#morePoker").toggle();
     });
 
 
     $("#moreTank").click(function(){
       $(".tankText").toggle();
     });
+    $("#lessTank").click(function(){
+      $(".tankText").toggle();
+    });
+    $("#moreTank").click(function(){
+      $("#moreTank").toggle();
+    });
+    $("#moreTank").click(function(){
+      $("#lessTank").toggle();
+    });
+    $("#lessTank").click(function(){
+      $("#lessTank").toggle();
+    });
+    $("#lessTank").click(function(){
+      $("#moreTank").toggle();
+    });
+
 
 });
   </script>
@@ -45,11 +111,18 @@
         </div>
       </header>
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">About me...</h1>
-          <p class="lead my-3">I am a full-stack web developer and recent graduate of Coding Dojo in Seattle. I am highly passionate about everything gaming so during the courses I build four gaming related projects you can find below!</p>
-        </div>
+      
+        <div class="row">
+          <div class="col-8">
+            <h1 class="display-4 font-italic">About me...</h1>
+            <p class="lead my-3">I am a full-stack web developer. I am highly passionate about everything gaming so during the courses I build four gaming related projects you can find below. That doesn't mean I can only do game, however, I believe gamification of other things in our lives can greatly help make all sorts of subjects easier and more fun to learn! </p>
+          </div>
+          <div class="col-4">
+            <img class="rounded-circle ml-8 card-img-right" src="https://i.imgur.com/vTBn40H.jpg" width="300" height="300">
+          </div>
+        </div>      
       </div>
+
       <!-- DREADNOUGHT -->
       <div class="row mb-2">
         <div class="col-md-6">
@@ -60,7 +133,7 @@
                 <a class="text-dark" >Dreadnought</a>
               </h3>
               <div class="mb-1 text-muted">September 2018</div>
-              <p class="card-text mb-auto">A web-based game build with MEAN technology stack. <a href="#" id="moreDread">More...</a></p> 
+              <p class="card-text mb-auto">A web-based game build with MEAN technology stack. <a href="#" id="moreDread">More...</a><a href="#" id="lessDread">Less</a></p> 
               <p class="dreadText" class="hidden card-text mb-auto"> In this game you can design ships, put weapons and decide the armor layout, and speed of your ships. Then build a fleet using a point buy system similar to miniature game.</p>
               <p class="dreadText" class="hidden card-text mb-auto">Take your fleet to battle against the AI which will pick a random assortment of ships in three different game modes. You can move your ships and decide on which target to attack to attack or launch tropedo using a turn-base system. Combat algorithm takes into account for ship size, weapon class, armor thickness.</p>              
               <p class="dreadText" class="hidden card-text mb-auto"><a href="https://github.com/pedro0930/Dreadnought">Want to Learn more? Check out the Project Github!</a></p>
@@ -85,7 +158,7 @@
                 <a class="text-dark">Food Truck Sim</a>
               </h3>
               <div class="mb-1 text-muted">July 2018</div>
-              <p class="card-text mb-auto">A web-based game written in Python using Django framework. <a href="#" id="moreTruck">More...</a></p>
+              <p class="card-text mb-auto">A web-based game written in Python using Django framework. <a href="#" id="moreTruck">More...</a><a href="#" id="lessTruck">Less</a></p>
               <p class="truckText" class="hidden card-text mb-auto"> In this game you can design ships, put weapons and decide the armor layout, and speed of your ships. Then build a fleet using a point buy system similar to miniature game.</p>
               <p class="truckText" class="hidden card-text mb-auto">Take your fleet to battle against the AI which will pick a random assortment of ships in three different game modes. You can move your ships and decide on which target to attack to attack or launch tropedo using a turn-base system. Combat algorithm takes into account for ship size, weapon class, armor thickness.</p>              
               <p class="truckText" class="hidden card-text mb-auto"><a href="https://github.com/Phantom30/Project_one">Want to Learn more? Check out the Project Github!</a></p>
@@ -111,7 +184,7 @@
                   <a class="text-dark" >PokerFighter</a>
                 </h3>
                 <div class="mb-1 text-muted">August 2018</div>
-                <p class="card-text mb-auto">A console based game (console as in CLI, not PS4) written in C# as a summer hackathon project. <a href="#" id="morePoker">More...</a></p> 
+                <p class="card-text mb-auto">A console based game (console as in CLI, not PS4) written in C# as a summer hackathon project. <a href="#" id="morePoker">More...</a><a href="#" id="lessPoker">Less</a></p> 
                 <p class="pokerText" class="hidden card-text mb-auto">The idea is to build a RPG combat system similar to Puzzle Quest but using Poker instead of match-3 system.</p>
                 <p class="pokerText" class="hidden card-text mb-auto">Perform different type of attack with different effectiveness based on the cards you play. Your opponent fights back with various moves.  </p>              
                 <p class="pokerText" class="hidden card-text mb-auto"><a href="https://github.com/pedro0930/PokerFighter">Want to Learn more? Check out the Project Github!</a></p>
@@ -135,7 +208,7 @@
                   <a class="text-dark">Networked Tanks!</a>
                 </h3>
                 <div class="mb-1 text-muted">August 2018</div>
-                <p class="card-text mb-auto">A project build on top of a Unity tutorial project. <a href="#" id="moreTank">More...</a></p>
+                <p class="card-text mb-auto">A project build on top of a Unity tutorial project. <a href="#" id="moreTank">More...</a><a href="#" id="lessTank">Less</a></p>
                 <p class="tankText" class="hidden card-text mb-auto">Based off a split screen Unity tutorial project. I added network multiplayer functionality, lobby system, controllable turret, player color selection, custome camera angle, customizable player size, and other custom features.</p>              
                 <p class="tankText" class="hidden card-text mb-auto"><a href="https://github.com/pedro0930/Networked-Tanks">Want to Learn more? Check out the Project Github!</a></p>
               </div>
